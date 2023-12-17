@@ -37,7 +37,6 @@ export class AuthService {
     }
 
     async getCurrentUser() {
-        // eslint-disable-next-line no-useless-catch
         try {
             return await this.account.get()
         } catch (error) {
@@ -48,7 +47,6 @@ export class AuthService {
     }
 
     async logout() {
-        // eslint-disable-next-line no-useless-catch
         try {
             return await this.account.deleteSessions()
         } catch (error) {
